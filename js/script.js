@@ -51,22 +51,28 @@ function efectoHabilidades() {
 
 //Funcion de formulario de correo con formspree
 
-const $form = document.querySelector('#form')
+$form.addEventListener('submit', async function (event) {
+  event.preventDefault();
 
-$form.addEventListener('submit', handlesubmit)
+  const form = new FormData(this);
 
-async function handlesubmit(event){
-  event.preventDefault()
-  const form = new FormData(this)
-  const response = await fetch(this.action, {
-    method: this.method,
-    body: form,
-    headers:{
-      'Accept': 'application/json'
+  try {
+    const response = await fetch(this.action, {
+      method: this.method,
+      body: form,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      this.reset();
+      alert('Gracias por contactarme, te escribiré pronto');
+    } else {
+      alert('Hubo un problema al enviar el formulario');
     }
-  })
-  if(response.ok){
-    this.reset()
-    alert('Gracias por contactarme, te escribire pronto')
+  } catch (error) {
+    alert('Hubo un error en el envío del formulario');
+    console.error(error);
   }
-}
+});
