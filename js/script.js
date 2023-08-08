@@ -48,3 +48,7 @@ function efectoHabilidades() {
   }
 
 }
+
+
+
+//Funcion de formulario de correo con formspree
