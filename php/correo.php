@@ -12,7 +12,10 @@
             $mail = @mail($email, $asunto, $mensaje , $header);
             if($mail){
                 echo "Email enviado existosamente";
+            }} else {
+                echo "Error al enviar el correo";
             }
+        } else {
+            echo "Por favor, completa todos los campos del formulario";
         }
-    }
 ?>
