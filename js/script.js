@@ -51,7 +51,7 @@ function efectoHabilidades() {
 
 //Funcion de formulario de correo con formspree
 
-$form.addEventListener('submit', async function (event) {
+/*$form.addEventListener('submit', async function (event) {
   event.preventDefault();
 
   const form = new FormData(this);
@@ -75,4 +75,4 @@ $form.addEventListener('submit', async function (event) {
     alert('Hubo un error en el envío del formulario');
     console.error(error);
   }
-});
+});*/
