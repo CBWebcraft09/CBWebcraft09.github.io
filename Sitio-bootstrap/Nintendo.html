@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- FIN CSS BOOTSTRAP-->
+
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Sitio Web con Bootstrap</title>
+</head>
+<body>
+    <!--CUERPO DE LA PAGINA-->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpg" width="200" title="Logo empresa">
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#cerrar-nav"
+                    aria-controls="cerrar-nav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--COMIENDO DE div-->
+                <div class="collapse navbar-collapse" id="cerrar-nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicios</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Regalos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Registros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio Sesion</a></li>
+                    </ul>
+                </div>
+                <!--FIN COMIENDO DE div-->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carrusel"> 
+            <!--INICIO DE CAROUSEL-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" 
+                  data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                    </button>
+
+                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                     data-bs-slide-to="1" aria-label="Slide 2">
+                    </button>
+
+                    <button type="button" data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="2" aria-label="Slide 3">
+                    </button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slide01.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/slide02.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/slide03.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" 
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" 
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--FIN DE CAROUSEL-->
+        </section>
+
+        <section id="ribbon">
+            <div id="pajarraco" class="container w-50 pl-5 rounded-lg">
+                <div class="row align-items-center">
+
+                    <div class="col-sm p-3">
+                        <img src="img/image01.png" class="w-75 mx-auto d-block">
+                    </div>
+
+                    <div class="col-sm text-center text-light">
+                        <h3 class="text-warning">Bienvenidos a mi pagina de juegos</h3>
+                        <h4 class="texto-sombra">Catologo de juegos</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="separador-ribbon">
+            <div class="contenido bg-warning">
+                <br><br><br><br><br>
+            </div>
+        </section>
+
+        <section id="juegos"> 
+            <div class="container p-5">
+                <div class="row pt-5">
+                    <h3 class="text-center pt-5 pb-5">Diseñando web con HTML, CSS, BOOTSTRAP</h3>
+                </div>
+
+                <!--ZONA DE LOS CARD DE BOOTSTRAP-->
+                <div class="row">
+                    <div class="col">
+                        <div class=" card card-border">
+                                <img src="img/card01.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title 
+                                            and make up the bulk of the card's content.</p>
+                                    </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class=" card card-border">
+                                <img src="img/card02.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title 
+                                            and make up the bulk of the card's content.</p>
+                                    </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class=" card card-border">
+                                <img src="img/card03.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title 
+                                            and make up the bulk of the card's content.</p>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN ZONA DE LOS CARD DE BOOTSTRAP-->
+                <div class="row p-5">
+                    <h2 class="text-center fw-bold badge bg-info">Descargue mas juegos desde www.juegos.com</h2>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col"> <a href="#">Enlace 01</a></div>
+                    <div class="col"> <a href="#">Enlace 02</a></div>
+                    <div class="col"> <a href="#">Enlace 03</a></div>
+                    <div class="col"> <a href="#">Enlace 04</a></div>
+                    <div class="col"> <a href="#">Enlace 05</a></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="separador-Amiibo">
+             <div class="content bg-success"></div>
+        </section>
+
+        <section id="amiibos" class="px-5 pb-5 bg-success">
+             <div class="container">
+                <div class="row">
+                    <h2 class="text-center text-white text-shadow h1">Featured Amiibo™ figures</h2>
+                </div>
+                
+                <div class="row row-cols-1 row-cols-2 row-cols-sm-2 row-colsmd-4">
+                    <div class="col-sm">
+                        <img src="img/figure01.png" alt="" class="w-100 amiibo">
+                        <div class="text-center"> <span class="amiibo-name h5 p-2">Isabelle</span></div>
+                    </div>
+
+                    <div class="col-sm">
+                        <img src="img/figure02.png" alt="" class="w-100 amiibo">
+                        <div class="text-center"> <span class="amiibo-name h5 p-2">Kapp'n</span></div>
+                    </div>
+
+                    <div class="col-sm">
+                        <img src="img/figure03.png" alt="" class="w-100 amiibo">
+                        <div class="text-center"> <span class="amiibo-name h5 p-2">Rover</span></div>
+                    </div>
+
+                    <div class="col-sm">
+                        <img src="img/figure04.png" alt="" class="w-100 amiibo">
+                        <div class="text-center"> <span class="amiibo-name h5 p-2">Timmy & Tommy</span></div>
+                    </div>
+                </div>
+
+                <div class="row py-5">
+                    <div class="col text-center">
+                        <a href="#" class="link-dark">
+                            <button class="btn btn-warning btn-lg rounded-pill p-3 font-wight-bold">Ver catálogo Amiibo</button>
+                        </a>
+                    </div>
+                </div>
+             </div>
+
+             <div id="separador-amiibos-footer">
+             </div>
+        </section>
+
+        <section id="nintendo"> 
+            <div class="container-sm p-5">
+                <div class="row">
+                    <h3 class="text-center h1">Isabelle and friends on Play Nintendo</h3>
+                </div>
+
+                <div class="row justify-centen-cent aling-items-center">
+                    <div class="col-3 d-none d-md-block">
+                        <img src="img/isabelle.png" class="w-100">
+                    </div>
+                    
+                    <div class="col-9">
+                        <div class="row justify-content-md-center"> 
+                            <div class="col p-1">
+
+                                <div class="card bg-primary text-white">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/ph-01.jpg" class="w-100">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title 1</h5>
+                                                <p class="card-text"> This is a wider card with 
+                                                    supporting text below.</p>
+                                            </div> <!--card body-->
+                                        </div> <!--col-->
+                                    </div><!--row-->
+                                </div><!--CARD-->
+
+                            </div>
+
+                            <div class="col p-1">
+
+                                <div class="card bg-primary text-white">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/ph-02.jpg" class="w-100">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title 2</h5>
+                                                <p class="card-text"> This is a wider card with 
+                                                    supporting text below.</p>
+                                            </div> <!--card body-->
+                                        </div> <!--col-->
+                                    </div><!--row-->
+                                </div><!--CARD-->
+
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center"> 
+                            <div class="col p-1">
+
+                                <div class="card bg-primary text-white">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/ph-03.jpg" class="w-100">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title 3</h5>
+                                                <p class="card-text"> This is a wider card with 
+                                                    supporting text below.</p>
+                                            </div> <!--card body-->
+                                        </div> <!--col-->
+                                    </div><!--row-->
+                                </div><!--CARD-->
+
+                            </div>
+
+                            <div class="col p-1">
+
+                                <div class="card bg-primary text-white">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/ph-04.jpg" class="w-100">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title 4</h5>
+                                                <p class="card-text"> This is a wider card with 
+                                                    supporting text below.</p>
+                                            </div> <!--card body-->
+                                        </div> <!--col-->
+                                    </div><!--row-->
+                                </div><!--CARD-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer" class="p-5">
+            <div class="container w-50 pt-5">
+                <div class="row row-clos-md-2 justify-content-md-center">
+                    <div class="col tex-center">
+                        <a href="#">
+                            <button class="btn btn-lg rounded-pill btn-warging w-100 p-3 
+                            shadow-sm font-wqeight-bold">Customer Support</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center py-5">
+                    <div class="col text-center font-weight-ligth">
+                        <p>For Nintendo 3DS systems, use Parental Controls to restrict 3D mode for 
+                            children 6 and under.</p>
+                        <p>Internet access requiered for online features. For more info, go to 
+                            support.nintendo.com.</p>
+                        <p>Games and amiibo accessories sold separately. Figures shown not actual
+                            size.Compatiblity and functionality of amiibo may vary per game. Visit 
+                            amiibo.com for specific detals on how each amiibo works.</p>
+                        <p>© 2001 - 2020 Nintendo. Nintendo properties are trademarks of Nintendo</p>
+                    </div>
+                </div>
+                
+                <div class="row"></div>
+            </div>
+        </div>
+        ©  Derechos reservados
+    </footer>
+
+    <!---ZONA DE SCRIPT-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        jQuery(document).ready(function()
+        {
+            jQuery("#mensaje").click(function()
+            {
+                alert("Esto es un mensaje que comprueba JQuery");
+            });
+        });
+    </script>
+</body>
+</html>
