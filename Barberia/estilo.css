@@ -368,7 +368,13 @@ textarea{
     background-color: #070707;
 }
 
-@media(max-width:991){
+@media screen and (max-width: 800px){
+    .redes {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
     .menu{
         padding: 20px;
     }
