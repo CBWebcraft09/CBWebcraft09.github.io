@@ -14,6 +14,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #1f1f1f;
+    font-size: 16px;
 }
 .btn-wsp{
     position: fixed;
@@ -442,6 +443,10 @@ textarea{
         padding: 30px;
         text-align: center;
     }
+    .welcome-1 img,
+    .welcome-2 img {
+    max-width: 100%;
+    }
 
     h2{
         font-size: 70px;
@@ -475,7 +480,7 @@ textarea{
 
     .prices-1{
         width: 100%;
-        padding: 30px;
+        padding: 0 20px;
         text-align: center;
     }
 
@@ -504,8 +509,13 @@ textarea{
         padding: 30px;
     }
 
-    textarea{
-        width: 250px !important;
+    .campo {
+        padding: 10px;
+    }
+    
+    textarea {
+        width: 100%;
+        max-width: 100%;
     }
 
 }
