@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable">
-    
     <!--Estillo de Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -22,59 +21,59 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
     <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
 
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
-                            <li><a href="#servicio" onclick="seleccionar(this)">Servicio</a></li>
-                            <li><a href="#precio" onclick="seleccionar(this)">Precio</a></li>
-                            <li><a href="#estilista" onclick="seleccionar(this)">Estilistas</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
-                        </ul>
-                    </nav>
-                    <!-- Iconos del menu responsive-->
+        <header class="header">
 
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
+            <div class="menu container">
+                <a href="" class="logo"></a>
+                <input type="checkbox" id="menu">
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                        <li><a href="#servicio" onclick="seleccionar(this)">Servicio</a></li>
+                        <li><a href="#precio" onclick="seleccionar(this)">Precio</a></li>
+                        <li><a href="#estilista" onclick="seleccionar(this)">Estilistas</a></li>
+                        <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!-- Iconos del menu responsive-->
+
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="header-content container">
+                <div class="header-txt">
+                    <h1>Barberia </h1>
+                    <span>Imperio</span>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat voluptas
+                        officia temporibus ratione non ex necessitatibus, amet aliquid expedita harum
+                        eius suscipit mollitia nihil aspernatur sit ea et, consectetur molestias!
+                    </p>
+                    <a href="#" class="btn-1">Informacion</a>
                 </div>
 
-                <div class="header-content container">
-                    <div class="header-txt">
-                        <h1>Barberia </h1>
-                        <span>Imperio</span>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat voluptas
-                            officia temporibus ratione non ex necessitatibus, amet aliquid expedita harum
-                            eius suscipit mollitia nihil aspernatur sit ea et, consectetur molestias!
-                        </p>
-                        <a href="#" class="btn-1">Informacion</a>
+                <div class="header-dir">
+                    <div class="dir">
+                        <h3>Direccion</h3>
+                        <p>Francisco Jiron vidal #215</p>
                     </div>
-
-                    <div class="header-dir">
-                        <div class="dir">
-                            <h3>Direccion</h3>
-                            <p>Francisco Jiron vidal #215</p>
-                        </div>
-                        <div class="dir">
-                            <h3>Telefono</h3>
-                            <p>+51 995 167 543</p>
-                        </div>
-                        <div class="dir">
-                            <h3>Horario</h3>
-                            <p>9am a 9pm</p>
-                        </div>
+                    <div class="dir">
+                        <h3>Telefono</h3>
+                        <p>+51 995 167 543</p>
                     </div>
-
+                    <div class="dir">
+                        <h3>Horario</h3>
+                        <p>9am a 9pm</p>
+                    </div>
                 </div>
-
-
-        </div>
+            </div>
+            
         </header>
-        </div>
+
     </section>
     <section>
         <div class="welcome">
