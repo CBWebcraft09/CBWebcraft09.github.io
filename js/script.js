@@ -3,7 +3,7 @@
  function enviarWhatsapp() {
   var telefono = "51993178676"; // Aquí puedes cambiar el número de teléfono
   var mensaje = encodeURIComponent("¡Hola! Me gustaria contactarte. Vine desde tu pagina web CB WebCraft"); // Mensaje predeterminado
-  var url = "https://api.whatsapp.com/send?phone=" + telefono + "&text=" + mensaje;
+  var url = "https://api.whatsapp.com/send?phone=51993178676" + telefono + "&text=" + mensaje;
   window.open(url, "_blank");
 }
 
