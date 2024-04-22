@@ -35,7 +35,7 @@ html {
 
 /*SECCION INICIO*/
 #inicio{
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('/img/LogoImprentaBarranca.png');
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('/ImprentaBarranca/img/LogoImprentaBarranca.png');
     background-size: cover;
     background-position: center center;
     height: 100vh;
