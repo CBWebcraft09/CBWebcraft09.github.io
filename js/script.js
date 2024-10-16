@@ -51,15 +51,16 @@ function efectoHabilidades() {
 
 //Funcion de formulario de correo con formspree
 
-$form.addEventListener('submit', async function (event) {
+const form = document.querySelector('form'); // Aquí seleccionamos el formulario
+form.addEventListener('submit', async function (event) {
   event.preventDefault();
 
-  const form = new FormData(this);
+  const formData = new FormData(this); // FormData recoge los datos del formulario
 
   try {
     const response = await fetch(this.action, {
       method: this.method,
-      body: form,
+      body: formData,
       headers: {
         'Accept': 'application/json'
       }
@@ -76,3 +77,4 @@ $form.addEventListener('submit', async function (event) {
     console.error(error);
   }
 });
+
