@@ -195,10 +195,11 @@ html {
     text-decoration-thickness: 5px ;
 }
 
-#sobremi .sobremi h2{
-    font-size: 34px;
+#sobremi .sobremi h2 {
+    font-size: 35px;
     font-weight: bold;
     margin: 20px 0;
+    text-align: center;
     letter-spacing: 2px;
 }
 
@@ -206,12 +207,13 @@ html {
     color: #ff5080;
 }
 
-#sobremi .sobremi h3{
-    font-size: 18px;
+#sobremi .sobremi h3 {
+    font-size: 21px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
+    text-align-last: center;
 }
 
 
